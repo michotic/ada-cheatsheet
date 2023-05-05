@@ -126,7 +126,7 @@ while (condition) {
 
 ## 3. Functions and Procedures
 
-### Functions
+### Functions (returns something)
 
 Ada:
 
@@ -152,7 +152,7 @@ int add(int x, int y) {
 }
 ```
 
-### Procedures
+### Procedures (doesn't return anything)
 
 Ada:
 
@@ -170,4 +170,44 @@ def display_message(msg):
    print(msg)
 ```
 
-C
+C++:
+
+```cpp
+void display_message(const std::string& msg) {
+   std::cout << msg << std::endl;
+}
+```
+
+## 4. Package (Similar to Python Modules and C++ Namespaces)
+
+### Declaring a package
+
+Ada:
+
+```Ada
+package My_Package is
+   -- Declarations
+end My_Package;
+```
+
+Python: Create a file named `my_package.py`
+
+C++: Create a header file named `my_package.hpp`
+
+### Using a package
+
+Ada: `with My_Package; use My_Package;`
+
+Python: `import my_package`
+
+C++: `#include "my_package.hpp"`
+
+## 5. Differences
+
+- In Ada, type checking is more strict, which can help prevent errors.
+- Ada has a more verbose syntax, which can be beneficial for readability.
+- Ada uses named parameter passing, which can make function calls more explicit.
+- Python is dynamically typed, whereas Ada and C++ are statically typed.
+- Ada has more built-in support for parallel and real-time programming.
+
+For more information, refer to the Ada Language Reference Manual: https://www.adaic.org/resources/add_content/standards/12rat/html/Rat12-
